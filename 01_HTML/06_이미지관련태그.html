@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이미지관련태그</title>
+  </head>
+  <body>
+    <h1>이미지 관련 태그</h1>
+    <h2>img 태그</h2>
+    <h3>src 속성</h3>
+    <!-- <img src="D:\develop\Github\frontend\resources\image\flower1.PNG" alt=""> -->
+    <!-- <img src="../resources/image/flower1.PNG" alt=""> -->
+    <img
+      src="https://i.ytimg.com/vi/7OqMwgNhSSM/maxresdefault.jpg"
+      alt="대충 이브이가 노려보는 짤"
+    />
+
+    <h3>alt 속성</h3>
+    <img
+      src="../resources/image/flower11.PNG"
+      alt="이 사진은 벚꽃 사진입니다."
+    />
+
+    <h3>width와 height 속성</h3>
+    <h4>고정 크기 단위 : 화면 사이즈가 줄어도 크기가 변하지 않는다.</h4>
+    <img src="../resources/image/flower1.PNG" width="200" />
+    <img src="../resources/image/flower2.PNG" width="200" height="150" />
+
+    <h4>가변 크기 단위 : 화면 사이즈에 따라 크기가 달라진다.</h4>
+    <img src="../resources/image/flower1.PNG" width="15%" />
+    <img src="../resources/image/flower2.PNG" width="15%" height="150" />
+
+    <h2>이미지 맵</h2>
+    <h4>이미지 구역을 2개로 나누어 각각 링크 설정</h4>
+    <img
+      src="../resources/image/flower3.PNG "
+      width="600px"
+      height="400"
+      usemap="#circle_map"
+    />
+
+    <!-- 
+        shape : 링크로 사용할 영역의 형태 지정(rect, circle, play)
+        coords : 분할할 영역의 좌표를 설정
+        href : 해당 속성에 기술된 url로 링크를 만들어준다.
+        target : 링크 페이지가 열릴 위치(새 창 _blank, 현재 창 _self)    
+ -->
+
+    <map name="map">
+      <area
+        shape="rect"
+        coords="0, 0, 300, 400"
+        href="https://www.naver.com"
+        target="_self"
+      />
+      <area
+        shape="rect"
+        coords="300, 0, 600, 400"
+        href="https://www.goolge.com"
+        target="_blank"
+      />
+    </map>
+
+    <map name="circle_map">
+      <area
+        shape="circle"
+        coords="300,200,100"
+        href="https://www.naver.com"
+        target="_blank"
+      />
+    </map>
+  </body>
+</html>
