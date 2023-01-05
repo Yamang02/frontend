@@ -99,23 +99,246 @@
 
     <br /><br />
 
-    <label for="homePage">홈페이지 </label>
-    <input type="url" name="homePage" id="homePage" size="30" value="https://">
+    <!-- <label for="homePage">홈페이지 </label>
+    <input type="url" name="homePage" id="homePage" size="30" value="https://"> -->
     <br /><br />
 
-    <label for="email">이메일&nbsp;&nbsp; &nbsp;  </label>
-    <input type="email" name="email" id="email"  size="30" placeholder="이메일을 입력하세요." >
+    <label for="email">이메일&nbsp;&nbsp; &nbsp; </label>
+    <input
+      type="email"
+      name="email"
+      id="email"
+      size="30"
+      placeholder="이메일을 입력하세요."
+    />
     <br /><br />
 
     <label for="phone">전화번호</label>
-    <input type="tel" name="phone" id="phone" size="30">
+    <input type="tel" name="phone" id="phone" size="30" />
 
-    <br><br>
+    <br /><br />
+
+    <input type="submit" value="전송" />
+    <input type="reset" value="초기화" />
+  </form>
+
+  <h3>type="number | range"</h3>
+  <form>
+    <label for="amount"> 수량 </label>
+    <input
+      type="number"
+      name="amount"
+      id="amount"
+      value="0"
+      min="0"
+      max="10"
+      step="2"
+    />
+
+    <br /><br />
+    <label for="point">포인트</label>
+    <input type="range" name="point" id="point" step="50" />
+
+    <br /><br />
+
+    <input type="submit" value="전송" />
+    <input type="reset" value="초기화" />
+  </form>
+
+  <h3>type="color | file"</h3>
+
+  <form>
+    <label for="color">색상</label>
+    <input type="color" name="color" id="color" value="#ffffff" />
+
+    <br /><br />
+
+    <label for="uploadFile">파일검색</label>
+    <input type="file" name="uploadFile" id="uploadFile" multiple />
+
+    <br /><br />
 
     <input type="submit" value="전송" />
     <input type="reset" value="초기화" />
 
+    <br /><br />
   </form>
 
-  <body></body>
+  <h3>type="radio | checkbox"</h3>
+  <form>
+    <fieldset>
+      <legend>성별</legend>
+
+      <label
+        ><input type="radio" name="gender" id="gender" value="M" checked />
+        남자</label
+      >
+      <label
+        ><input type="radio" name="gender" id="gender" value="F" /> 여자</label
+      >
+    </fieldset>
+    <fieldset>
+      <legend>취미</legend>
+      <label><input type="checkbox" name="hobby" value="baseball" />야구</label>
+      <label><input type="checkbox" name="hobby" value="football" />축구</label>
+      <label
+        ><input type="checkbox" name="hobby" value="basketball" />농구</label
+      >
+    </fieldset>
+    <br /><br />
+    <input type="submit" value="전송" />
+    <input type="reset" value="초기화" />
+  </form>
+
+  <h3>type = "date | month | week | time | datetime | datetime-local"</h3>
+
+  <form>
+    <label for="date">날짜 &nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input
+      type="date"
+      name="date"
+      id="date"
+      value="2023-01-04"
+      min="2023-01-01"
+      max="2023-01-06"
+    />
+    <br /><br />
+
+    <label for="month">월 &nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input
+      type="month"
+      name="month"
+      id="month"
+      value="2023-01"
+      min="2023-01"
+      max="2023-03"
+    />
+
+    <br /><br />
+
+    <label for="week">주 &nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input
+      type="week"
+      name="week"
+      id="week"
+      value="2023-W10"
+      min="2023-W03"
+      max="2023-W10"
+    />
+
+    <br /><br />
+
+    <label for="time">시간 &nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="time" name="time" id="time" value="22:59:38" />
+
+    <!-- min 이랑 max는? 됨 실습만 안 하신 듯-->
+
+    <br /><br />
+
+    <!-- 크롬과 익스플로어, 엣지에서 지원하지 않고 datetime-local을 지원, text타일로 출력-->
+    <label for="datetime">datetime :</label>
+    <input type="datetime" name="datetime" id="datetime" />
+
+    <br /><br />
+
+    <br /><br />
+    <label for="datetime-local">datetime-local</label>
+    <input
+      type="datetime-local"
+      name="datetime-local"
+      id="datetime-local"
+      value="2023-01-04T22:38:27"
+    />
+
+    <br /><br />
+
+    <!-- input 태그 사용 
+    <input type="button" value="버튼" onclick="alert('버튼클릭')">
+    -->
+
+    <!-- form태그 안에서 button을 사용하면 기본 기능은 서브밋-->
+    <button>form내 버튼(기본)</button>
+    <button type="submit">submit option 버튼</button>
+    <button type="reset">reset option 버튼</button>
+    <button type="button" onclick="alert('버튼 클릭!')">버튼</button>
+
+    <br /><br />
+    <input type="submit" value="전송" />
+    <input type="reset" value="초기화" />
+  </form>
+
+  <br /><br />
+
+  <button>form바깥버튼</button>
+
+  <hr />
+
+  <h2>select 태그</h2>
+  <form>
+    <!-- <label for="national">국적 : </label> -->
+
+    <label
+      >국적 :
+      <select name="national" id="national" multiple>
+        <optgroup label="아시아">
+          <option value="ko">한국</option>
+          <option value="jp">일본</option>
+          <option value="ch">중국</option>
+        </optgroup>
+        <optgroup label="기타">
+          <option value="us" label="미국"></option>
+          <option value="fr" label="프랑스"></option>
+        </optgroup>
+        <option selected value="none">---------</option>
+      </select></label
+    >
+
+    <input type="submit" value="전송" />
+    <input type="reset" value="초기화" />
+  </form>
+
+  <br /><br />
+
+  <h2>datalist 태그</h2>
+  <form>
+    <label> 색상 : <input type="text" name="color" list="colors" /></label>
+
+    <datalist id="colors">
+      <option data-value="black_data" value="black"></option>
+      <option value="white">하얀색</option>
+      <option value="skyblue">하늘색</option>
+    </datalist>
+
+    <br /><br />
+
+    <input type="submit" value="전송" />
+    <input type="reset" value="초기화" />
+  </form>
+
+  <h2>textarea 태그</h2>
+  <!-- input과 비슷하지만 공백도 다 들어감 사이즈 지정 가능, style = resize :none; 옵션으로 크기 고정도 가능-->
+  <form>
+    <textarea
+      rows="15"
+      cols="45"
+      style="resize: none;"
+      placeholder="내용을 입력하세요"
+    ></textarea>
+
+    <br /><br />
+
+    <input type="submit" value="전송" />
+    <input type="reset" value="초기화" />
+  </form>
+
+  <h2>progress 태그</h2>
+
+  <form>
+    <!--max값이 없으면 0~1사이의 값-->
+    <progress value="0.5"></progress>
+
+    <br /><br />
+
+    <meter min="0" max="100" low="60" high="70" value="90"></meter>
+  </form>
 </html>

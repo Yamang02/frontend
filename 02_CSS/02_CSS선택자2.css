@@ -1,0 +1,61 @@
+/*
+/* * {
+
+    background-color: ivory;
+    color: green;
+} */
+
+/* div 중에 name 속성을 가지고 있는 태그 선택
+/* div[name] {
+    background-color: orangered;
+} */
+
+/* div 중에 name 속성값이 name1과 일치하는 태그 선택 */
+/* div[name=name1] {
+    background-color: orangered;
+}
+
+/* name 속성 안에 name1이 포함되어 있는 태그 선택 */
+div[name~=name1] {
+    background-color: yellow;
+}
+
+/* div 중에 class 속성에서 class로 시작되는 태그 선택(단, -로 구분) */
+div[class|=class] {
+    background-color: aqua;
+}
+
+/* div 중에 name 속성이 name으로 시작되는 태그 선택 */
+div[class^=div] {
+    background-color: blueviolet;
+    color: white;
+}
+
+/* div 중에 name 속성이 2로 끝나는 태그 선택*/
+div[name$="2"] {
+    color: red;
+}
+
+/* div 중에 class 속성에 i를 포함하는 태그 선택*/
+div[class*=i] {
+    background-color: rgb(136, 163, 81);
+} 
+
+
+/* class가 div-class 인 것 중에 name 속성값에 name3이 포함되어 있는 태그 선택(단, 속성값은 띄어쓰기로 구분) */
+
+
+div[class=div-class][name~="name3"] {
+    background-color: pink;
+    color: blue;
+}
+
+.div-class[name~=name3] {
+    background-color: white;
+    color: brown;
+}
+
+#id1[name~=name3] {
+    background-color: black;
+    color: brown;
+}
