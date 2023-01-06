@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap");
+
+body {
+  font-family: "돋움", "hack";
+}
+
+#ff1 {
+  font-family: "궁서체";
+}
+
+#ff2 {
+  font-family: "굴림체";
+}
+
+#ff3 {
+  font-family: "없는글꼴", "hack1", "굴림체";
+}
+
+#wf {
+  font-family: "East Sea Dokdo", cursive;
+  font-size: 3em;
+  font-size: large;
+}
+
+/* font-size */
+#size1 {
+  font-size: 20px;
+}
+
+/* ul {
+    font-size: large;
+} */
+
+#size2 span {
+  /* font-size: 2em; */
+  font-size: 2rem;
+}
+
+#size3 {
+  font-size: 150%;
+}
+
+/* font-weight */
+#fw1 {
+    font-weight: 700;
+  /* font-weight: bold; */
+}
+
+#fw2 {
+  /* font-weight: bold; */
+  font-weight: lighter;
+}
+
+#fw3 {
+  font-weight: 900;
+  /* font-weight: bolder; */
+}

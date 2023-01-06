@@ -16,46 +16,232 @@
 }
 
 /* name 속성 안에 name1이 포함되어 있는 태그 선택 */
-div[name~=name1] {
-    background-color: yellow;
+div[name~="name1"] {
+  background-color: yellow;
 }
 
 /* div 중에 class 속성에서 class로 시작되는 태그 선택(단, -로 구분) */
-div[class|=class] {
-    background-color: aqua;
+div[class|="class"] {
+  background-color: aqua;
 }
 
 /* div 중에 name 속성이 name으로 시작되는 태그 선택 */
-div[class^=div] {
-    background-color: blueviolet;
-    color: white;
+div[class^="div"] {
+  background-color: blueviolet;
+  color: white;
 }
 
 /* div 중에 name 속성이 2로 끝나는 태그 선택*/
 div[name$="2"] {
-    color: red;
+  color: red;
 }
 
 /* div 중에 class 속성에 i를 포함하는 태그 선택*/
-div[class*=i] {
-    background-color: rgb(136, 163, 81);
-} 
-
+div[class*="i"] {
+  background-color: rgb(136, 163, 81);
+}
 
 /* class가 div-class 인 것 중에 name 속성값에 name3이 포함되어 있는 태그 선택(단, 속성값은 띄어쓰기로 구분) */
 
-
-div[class=div-class][name~="name3"] {
-    background-color: pink;
-    color: blue;
+div[class="div-class"][name~="name3"] {
+  background-color: pink;
+  color: blue;
 }
 
-.div-class[name~=name3] {
-    background-color: white;
-    color: brown;
+.div-class[name~="name3"] {
+  background-color: white;
+  color: brown;
 }
 
-#id1[name~=name3] {
+#id1[name~="name3"] {
+  background-color: black;
+  color: brown;
+}
+
+/* 자손 선택자와 후손 선택자 */
+#test1 > h4 {
+  background-color: rgb(51, 255, 0);
+}
+
+#test1 > ul > h4 {
+  background-color: purple;
+}
+
+#test1 > li {
+  background-color: coral;
+}
+
+#test1 > ul > li {
+  background-color: aquamarine;
+}
+
+#test1 li {
+  color: red;
+}
+
+/*형제 선택자*/
+#test2 {
+  background-color: red;
+}
+
+#test2 + div {
+  background-color: yellow;
+}
+
+/*#test2 ~ div {
+    background-color: green;
+    color: white;
+}*/
+
+/* 반응 선택자 */
+
+#active-test,
+#hover-test {
+  background-color: greenyellow;
+  width: 300px;
+  height: 300px;
+}
+
+#active-test:active {
+  background-color: yellow;
+  color: red;
+}
+
+#hover-test:hover {
+  background-color: hotpink;
+  color: white;
+  cursor: pointer;
+}
+
+#userId:focus,
+#userPwd:focus {
+  border: 4px solid red;
+}
+
+/* 상태 선택자 */
+
+input[type="checkbox"]:checked {
+  width: 20px;
+  height: 20px;
+}
+
+input[type="checkbox"]:checked + label {
+  font-size: 1.5em;
+}
+
+option:enabled {
+  background-color: rgb(207, 255, 135);
+  color: rgb(7, 100, 7);
+}
+
+option:disabled {
+  background-color: rgba(253, 105, 105, 0.336);
+  color: rgb(255, 65, 65);
+}
+
+button:enabled {
+  background-color: yellowgreen;
+}
+
+button:disabled {
+  background-color: red;
+}
+
+/* 구조 선택자*/
+/* 형제 관계 태그 중 첫 번째 태그를 선택 */
+#test3 p:first-child {
+  background-color: red;
+  color: white;
+}
+
+/* 형제 관계 태그 중 마지막 태그 선택 */
+/* 마지막 자식이 p태그가 아니어서 스타일이 적용되지 않는다. */
+#test3 p:last-child {
+  background-color: orange;
+  color: white;
+}
+
+
+/* 형제 관계 태그 중 앞에서 수열 번째 태그 선택 */
+/* #test3 p:nth-child(2n) { */
+    /* 수식을 사용하거나 수식 대신 odd(홀), even(짝)를 전달할 수 있다. */
+/* #test3 p:nth-child(even) { */
+#test3 p:nth-child(even) {
+    background-color: yellowgreen;
+    color: white;
+}
+
+/* 형제 관계 태그 중 뒤에서 수열 번째 태그 선택 */
+#test3 p:nth-last-child(4) {
+    background-color: skyblue;
+}
+
+#test4 p:first-of-type {
+    background-color: red;
+    color: white;
+}
+
+/* 형제 관계 태그 중 마지막 태그 선택 */
+#test4 p:last-of-type {
+    background-color: orange;
+    color: white;
+  }
+
+/* 형제 관계 태그 중 앞에서 수열 번째 태그 선택*/
+#test4 p:nth-of-type(2n) {
     background-color: black;
-    color: brown;
+    color: white;
+}
+
+/* 형제 관계 태그 중 뒤에서 수열 번째 태그 선택 */
+#test4 p:nth-last-of-type(4) {
+    background-color: skyblue;
+}
+
+/* p {
+    background-color: rgb(243, 232, 219);
+    color: rgba(177, 90, 27, 0.781);
+} */
+
+
+/* 문자 선택자 */
+/* 첫 번째 글자를 선택해서 스타일 적용*/
+
+#test5 p::first-letter {
+    font-size: 2em;
+}
+
+/* 첫 번째 라인을 선택해서 스타일 적용*/
+#test5 p::first-line {
+    background-color: rgb(243, 232, 219);
+    color: rgb(116, 65, 29);
+}
+
+#test5 p::before {
+    content: "1. ";
+}
+
+#test5 p::after {
+    content: "@@@@@";
+    font-size: 2em;
+}
+
+/* 사용자가 드래그한 글자 선택*/
+#test5 p::selection {
+    background-color: rgb(253, 62, 28);
+    color: rgb(189, 189, 189);
+}
+
+
+/* 부정 선택자 */
+/* #test6 p:not(.p){
+    background-color: chocolate;
+} */
+
+/* #test6 p:not(:last-child){
+    background-color: pink;
+} */
+
+#test6 p:not(:nth-child(even)){
+    background-color: pink;
 }
