@@ -1,0 +1,94 @@
+/* made by yamang93.tistory.com */
+
+:root {
+  /* 2000 */
+  --CERULEAN_BLUE: #9bb7d4;
+  /* 2001 */
+  --FUCHSIA_ROSE: #c74375;
+  /* 2002 */
+  --TRUE_RED: #bf1932;
+  /* 2003 */
+  --AQUA_SKY: #7bc4c4;
+  /* 2004 */
+  --TIGERLILY: #e2583e;
+  /* 2005 */
+  --BLUE_TURQUOISE: #53b0ae;
+  /* 2006 */
+  --SAND_DOLLAR: #decdbe;
+  /* 2007 */
+  --CHILI_PEPPER: #9b1b30;
+  /* 2008 */
+  --BLUE_IRIS: #5a5b9f;
+  /* 2009 */
+  --MIMOSA: #f0c05a;
+  /* 2010 */
+  --TURQUOISE: #45b5aa;
+  /* 2011 */
+  --HONEYSUCKLE: #d94f70;
+  /* 2012 */
+  --TANGERINE_TANGO: #dd4124;
+  /* 2013 */
+  --EMERALD: #009473;
+  /* 2014 */
+  --RADIANT_ORCHID: #ad5e99;
+  /* 2015 */
+  --MARSALA: #964f4c;
+  /* 2016 */
+  --SERENITY: #93a9d1;
+  --ROSE_QUARTZ: #f7caca;
+  /* 2017 */
+  --GREENERY: #88b04b;
+  /* 2018 */
+  --ULTRA_VIOLET: #5f4b8b;
+  /* 2019 */
+  --LIVING_CORAL: #ff6f61;
+  /* 2020 */
+  --CLASSIC_BLUE: #0f4c81;
+  /*2021*/
+  --ULTIMATE_GRAY: #939597;
+  --ILLUMINATING: #f5df4d;
+  /*2022*/
+  --VERY_PERI: #6667ab;
+  /*2023*/
+  --VIVA_MAGENTA: #bb2649;
+
+  /* 2023 TEMPLATE(VIVA_MAGENTA) FAMILYTIES*/
+  /* VIVA_MAGENTA */
+  --MYRISTICA: #846157;
+  --MUREX_SHELL: #e9b0d1; /* MUREX_SHELL as TYRIAN_PURPLE */
+  --CORAL_PARADISE: #f05e73;
+  --FLAMINGO_PLUME: #de838d;
+  --BLUSHING_ROSE: #e3baa8;
+  --ROASTED_RUSSET: #7a3b31;
+  --NEW_MAROON: #6b3339;
+
+  /*2023 TEMPLATE(VIVA_MAGENTA) TEMPLATE EQUILIBRIUM*/
+  /* VIVA_MAGENTA */
+  /* ULTIMATE_GRAY */
+  --CAYENNE: #c04d35;
+  --SUN_ORANGE: #f48037;
+  --CARMINE_ROSE: #ce6a69;
+  --WILD_ASTER: #92316f;
+  --TWILIGHT_PURPLE: #66648b;
+  --GRAPE_SHAKE: #886971;
+
+  /*2023 TEMPLATE(VIVA_MAGENTA) TEMPLATE IGNITE*/
+  /* VIVA_MAGENTA */
+  --PALE_DOGWOOD: #efd1c6;
+  --GRAY_SAND: #e5ccaf;
+  --GRAY_LILAC: #d4cacd;
+  --PALE_KHAKI: #bfaf92;
+  --FIELDS_OF_RYE: #b7a990;
+  --AGATE_GRAY: #b4b5a5;
+  --PLEIN_AIR: #c4ced6;
+  
+  /*2023 TEMPLATE(VIVA_MAGENTA) TEMPLATE RESONANCE*/
+  /* VIVA_MAGENTA */
+--BISCAY_BAY : #257a88;
+--FIR_GREEN : #27362A;
+--ROSE_TAUPE : #905d5d;
+--SILVER_PINE :  #4f6b67;
+--GLOXINIA : #622e5a;
+--TAWNY_POST : #6b3b44;
+--POLAR_NIGHT : #343540;
+}

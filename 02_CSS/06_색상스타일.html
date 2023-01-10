@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>색상스타일</title>
+
+    <style>
+      .bg-clip {
+        width: 30%;
+        height: 300px;
+        border: 15px dashed rgba(0, 0, 0, 0.3);
+        margin: 30px;
+        padding: 30px;
+        /* background-color: indianred; 
+            background-color: #5544aa; 
+            background-color: #54a; 
+            background-color: rgb(0,255,0); 
+            background-color: rgb(0,255,0,0.3);
+            background-color: hsl(300,100%,50);  */
+        background-color: hsla(221, 87%, 41%, 0.459);
+      }
+
+      #bg-clip1 {
+        background-clip: border-box;
+      }
+
+      #bg-clip2 {
+        background-clip: padding-box;
+      }
+
+      #bg-clip3 {
+        background-clip: content-box;
+      }
+
+      #bg-img {
+        width: 80%;
+        height: 800px;
+        border: 15px solid rgba(0, 0, 0, 0.3);
+        /* background-image: url('../resources/image/bgsample.PNG'); */
+        background-image: url(https://mblogthumb-phinf.pstatic.net/20140524_25/kaminari2002_1400877816018BDxQd_JPEG/x-men-days-of-future-past-blink-character-bio.jpg?type=w2);
+        border: 1px;
+
+        /*이미지 반복 설정*/
+        /* background-repeat: repeat; */
+        /* background-repeat: repeat-x; */
+        /* background-repeat: repeat-y; */
+        background-repeat: no-repeat;
+
+        /* 이미지 크기 설정 */
+        /* background-size: auto; */
+        /* background-size: contain; */
+        /* background-size: cover; */
+        /* background-size: 350px 250px; */
+        /* background-size: 100% 100%; */
+
+        /* 이미지 위치 설정 */
+        /* background-position: left top; */
+        /* background-position: right top; */
+        /* background-position: center top; */
+        /* background-position: center; */
+        /* background-position: left center; */
+        /* background-position: right center; */
+        /* background-position: left bottom; */
+        /* background-position: center bottom; */
+        /* background-position: right bottom; */
+
+        /* 이미지 배치 기준 설정 */
+        /* background-origin: padding-box; */
+        background-origin: border-box;
+        /* background-origin: content-box; */
+
+        /* 이미지를 고정하도록 설정 */
+        /* background-attachment: scroll; */
+        /* background-attachment: fixed; */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>색상 스타일</h1>
+    <h2>background-color, background-clip</h2>
+    <div class="bg-clip" id="bg-clip1"></div>
+    <div class="bg-clip" id="bg-clip2"></div>
+    <div class="bg-clip" id="bg-clip3"></div>
+
+    <h2>배경 이미지</h2>
+
+    <div id="bg-img"></div>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>08-4.연습문제</title>
+    <style>
+      #page {
+        border: 1px solid black;
+        width: 750px;
+        height: 500px;
+        margin: auto;
+      }
+
+      header {
+        height: 25%;
+        width: 100%;
+        /* border: 1px solid blue; */
+        background-color: rgba(0, 0, 255, 0.089);
+        box-sizing: border-box;
+      }
+
+      header * {
+        box-sizing: border-box;
+        border: 1px solid red;
+        float: left;
+      }
+
+      .hdiv {
+        height: 80%;
+      }
+
+      #hdiv1 {
+        width: 18%;
+      }
+
+      #hdiv2 {
+        width: 70%;
+      }
+
+      #hdiv3 {
+        width: 12%;
+      }
+
+      nav {
+        height: 20%;
+        width: 100%;
+      }
+
+      section {
+        height: 50%;
+        width: 100%;
+        /* border: 1px solid yellow; */
+        background-color: rgba(255, 255, 0, 0.205);
+        box-sizing: border-box;
+      }
+
+      section * {
+        height: 100%;
+        box-sizing: border-box;
+        border: 1px solid red;
+        float: left;
+      }
+
+      aside {
+        width: 13%;
+      }
+
+      #sar1 {
+        width: 57%;
+      }
+
+      #sar2 {
+        width: 30%;
+      }
+
+      footer {
+        height: 25%;
+        width: 100%;
+        border: 1px solid green;
+        background-color: rgba(0, 128, 0, 0.267);
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>8-4.연습문제</h1>
+    <div id="page">
+      <header>
+        <div class="hdiv" id="hdiv1"></div>
+        <div class="hdiv" id="hdiv2"></div>
+        <div class="hdiv" id="hdiv3"></div>
+        <nav></nav>
+      </header>
+      <section>
+        <aside></aside>
+        <article class="sar" id="sar1"></article>
+        <article class="sar" id="sar2"></article>
+      </section>
+      <footer></footer>
+    </div>
+  </body>
+</html>
+
+<!-- header의 div들을 div로 묶어 nav와 구분하기 -->

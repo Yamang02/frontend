@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div연습문제</title>
+    <style>
+        .wrap {
+            border: 4px solid rgba(238, 255, 0, 0.781);
+            width: 750px;
+            height: 500px;
+            margin:auto
+        }
+
+        .inner {
+            border : 2px solid red;
+            box-sizing: border-box;
+        }
+
+        #fl1 {
+            height: 20%;
+            width: 100%;
+        }
+
+        #fl2 {
+            float: left;
+            height: 60%;
+            width: 15%;
+        }
+
+        #fl3 {
+            float: left;
+            height: 60%;;
+            width:85%;
+        }
+
+        #fl4{
+            float:left;
+            height: 20%;
+            width: 100%;
+        }
+
+        #wrap2{
+            line-height: 0%;
+        }
+
+        .inner2 {
+            border : 2px solid blue;
+            box-sizing: border-box;
+            margin: 0px;
+        }
+
+        #ib1{
+            display: inline-block;
+            height: 20%;
+            width: 100%;
+        }
+
+        #ib2{
+            display: inline-block;
+            height: 60%;
+            width: 15%;
+        }
+
+        #ib3{
+            display: inline-block;
+            height: 60%;
+            width: 85%;
+        }
+
+        #ib4{
+            height: 20%;
+            width: 100%;
+        }
+
+    </style>
+</head>
+
+<body>
+    
+   
+    <div class="wrap">
+        <div class="inner" id="fl1"></div>
+        <div class="inner" id="fl2"></div>
+        <div class="inner" id="fl3"></div>
+        <div class="inner" id="fl4"></div>
+    </div>
+
+<hr>
+
+    <div class="wrap" id="wrap2">
+        <div class="inner2" id="ib1"></div><div class="inner2" id="ib2"></div><div class="inner2" id="ib3"></div><div class="inner2" id="ib4"></div>
+    </div>
+
+<hr>
+
+    <div class="wrap">
+        <div class="innner3" id="po1"></div>
+        <div class="innner3" id="po2"></div>
+        <div class="innner3" id="po3"></div>
+        <div class="innner3" id="po4"></div>
+    </div>
+
+
+
+
+</body>
+</html>

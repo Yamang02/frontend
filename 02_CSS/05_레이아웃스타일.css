@@ -1,0 +1,417 @@
+/* made by yamang93.tistory.com */
+
+:root {
+  /* 2000 */
+  --CERULEAN_BLUE: #9bb7d4;
+  /* 2001 */
+  --FUCHSIA_ROSE: #c74375;
+  /* 2002 */
+  --TRUE_RED: #bf1932;
+  /* 2003 */
+  --AQUA_SKY: #7bc4c4;
+  /* 2004 */
+  --TIGERLILY: #e2583e;
+  /* 2005 */
+  --BLUE_TURQUOISE: #53b0ae;
+  /* 2006 */
+  --SAND_DOLLAR: #decdbe;
+  /* 2007 */
+  --CHILI_PEPPER: #9b1b30;
+  /* 2008 */
+  --BLUE_IRIS: #5a5b9f;
+  /* 2009 */
+  --MIMOSA: #f0c05a;
+  /* 2010 */
+  --TURQUOISE: #45b5aa;
+  /* 2011 */
+  --HONEYSUCKLE: #d94f70;
+  /* 2012 */
+  --TANGERINE_TANGO: #dd4124;
+  /* 2013 */
+  --EMERALD: #009473;
+  /* 2014 */
+  --RADIANT_ORCHID: #ad5e99;
+  /* 2015 */
+  --MARSALA: #964f4c;
+  /* 2016 */
+  --SERENITY: #93a9d1;
+  --ROSE_QUARTZ: #f7caca;
+  /* 2017 */
+  --GREENERY: #88b04b;
+  /* 2018 */
+  --ULTRA_VIOLET: #5f4b8b;
+  /* 2019 */
+  --LIVING_CORAL: #ff6f61;
+  /* 2020 */
+  --CLASSIC_BLUE: #0f4c81;
+  /*2021*/
+  --ULTIMATE_GRAY: #939597;
+  --ILLUMINATING: #f5df4d;
+  /*2022*/
+  --VERY_PERI: #6667ab;
+  /*2023*/
+  --VIVA_MAGENTA: #bb2649;
+
+  /* 2023 TEMPLATE(VIVA_MAGENTA) FAMILYTIES*/
+  /* VIVA_MAGENTA */
+  --MYRISTICA: #846157;
+  --MUREX_SHELL: #e9b0d1; /* MUREX_SHELL as TYRIAN_PURPLE */
+  --CORAL_PARADISE: #f05e73;
+  --FLAMINGO_PLUME: #de838d;
+  --BLUSHING_ROSE: #e3baa8;
+  --ROASTED_RUSSET: #7a3b31;
+  --NEW_MAROON: #6b3339;
+
+  /*2023 TEMPLATE(VIVA_MAGENTA) TEMPLATE EQUILIBRIUM*/
+  /* VIVA_MAGENTA */
+  /* ULTIMATE_GRAY */
+  --CAYENNE: #c04d35;
+  --SUN_ORANGE: #f48037;
+  --CARMINE_ROSE: #ce6a69;
+  --WILD_ASTER: #92316f;
+  --TWILIGHT_PURPLE: #66648b;
+  --GRAPE_SHAKE: #886971;
+
+  /*2023 TEMPLATE(VIVA_MAGENTA) TEMPLATE IGNITE*/
+  /* VIVA_MAGENTA */
+  --PALE_DOGWOOD: #efd1c6;
+  --GRAY_SAND: #e5ccaf;
+  --GRAY_LILAC: #d4cacd;
+  --PALE_KHAKI: #bfaf92;
+  --FIELDS_OF_RYE: #b7a990;
+  --AGATE_GRAY: #b4b5a5;
+  --PLEIN_AIR: #c4ced6;
+  
+  /*2023 TEMPLATE(VIVA_MAGENTA) TEMPLATE RESONANCE*/
+  /* VIVA_MAGENTA */
+--BISCAY_BAY : #257a88;
+--FIR_GREEN : #27362A;
+--ROSE_TAUPE : #905d5d;
+--SILVER_PINE :  #4f6b67;
+--GLOXINIA : #622e5a;
+--TAWNY_POST : #6b3b44;
+--POLAR_NIGHT : #343540;
+}
+
+/* 박스 모델 */
+/* width, height */
+
+.size-test {
+  border: 10px solid red;
+  height: 200px;
+}
+
+.display {
+  border: 1px solid black;
+  width: 250px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+#fixed-size {
+  /* 콘텐츠의 너비와 높이를 지정한다. border값이 바깥에서 계산됨*/
+  /* border: 5px solid red; */
+  width: 200px;
+  /* height: 200px;
+    padding: 10px;
+    box-sizing: border-box; */
+}
+
+#variable-size {
+  /* border: 2px solid red; */
+  width: 50%;
+  /* height: 200px; */
+}
+
+.display-inline {
+  /* margin : 10px; */
+  display: inline;
+}
+
+.display-block {
+  /* padding: 10px; */
+  display: block;
+}
+
+.display-inline-block {
+  display: inline-block;
+}
+
+/* padding, margin */
+.space {
+  width: 100px;
+  height: 100px;
+  background-color: var(--SERENITY);
+  /* background-color: red; */
+}
+
+#padding1 {
+  padding: 10px;
+}
+
+#padding2 {
+  /* padding-top: 50px;
+    padding-right: 100px; */
+
+  /* 위 아래 50px, 좌우 30px */
+  /* padding: 50px 30px; */
+
+  /* 위 30px 우 50px 아래 30px 좌 50px */
+  padding: 30px 50px 25px 35px;
+}
+
+#margin1 {
+  margin: 50px;
+}
+
+/* 위 아래 마진은 중복됨! 왼쪽 오른쪽 마진은 어떻게 확인함?? */
+#margin2 {
+  /* margin-top: 80px;
+    margin-left: 20px; */
+
+  /* 위 아래 50px, 좌/우 30px */
+  /* margin: 50px 30px; */
+
+  /* 상 30px, 우 50px, 하 30px, 좌 50px */
+  margin: 30px 50px 30px 50px;
+}
+
+.border {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  border: 10px solid;
+}
+
+#border1 {
+  border-style: none;
+}
+
+#border2 {
+  border-style: hidden;
+  /* color: yellow; */
+  /* 가로, 세로, 흐림정도,  */
+  /* box-shadow: 15px 5px 3px 2px gray inset; */
+  box-shadow: 15px 15px 3px 2px gray;
+}
+
+#border3 {
+  border-style: dashed;
+}
+
+#border4 {
+  border-style: dotted;
+  /* border-color: var(--CHILI_PEPPER); */
+  /* border-color: var(--HONEYSUCKLE) var(--ILLUMINATING) var(--AQUA_SKY) var(--TANGERINE_TANGO); */
+  border-top-color: var(--PLEIN_AIR);
+  border-right-color: var(--GRAY_SAND);
+  border-bottom-color: var(--VIVA_MAGENTA);
+  border-left-color: var(--GRAY_LILAC);
+
+
+}
+
+#border5 {
+  border-style: double;
+  /* border-width: 30px; */;
+  border-color: var(--TURQUOISE);
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 10px 20px;
+
+}
+
+#border6 {
+  border-style: groove;
+}
+
+#border7 {
+  border-style: ridge;
+}
+
+#border8 {
+  border-style: inset;
+}
+
+#border9 {
+  border-style: outset;
+}
+
+#border10 {
+  border-style: solid;
+  /* border-width: 20px; */
+  /* border-width: 20px 30px; */
+  /* border-width: 20px 30px 10px 40px; */
+  border-top-width: 20px ;
+  border-left-width: thick ;
+  border-right-width: thin ;
+  border-bottom-width: medium;
+}
+
+/* 포지셔닝 */
+/* float */
+.float {
+    border: 1px solid;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    float: left;
+}
+
+/* position */
+#outer {
+    position: relative;
+    left: 200px;
+    top: 10px;
+    width: 300px;
+    height: 300px;
+    background-color: var(--GRAPE_SHAKE);
+}
+
+
+#first {
+    position: absolute;
+    /* 부모 요소 중 static이 아닌 요소가 없으면 부모인 body값을 기준으로 됨 */
+    top: 50px;
+    left: 50px;
+    width: 200px;
+    height: 200px;
+    background-color: var(--GRAY_LILAC);
+}
+
+#second {
+    background-color: var(--VIVA_MAGENTA);
+    position : absolute;
+    top: 100px;
+    left: 100px;
+    width: 100px;
+    height: 100px;
+}
+
+#fixed {
+    /* position: fixed; */
+    position: sticky;
+    top: 100px;
+    left : 80%;
+    width: 100px;
+    height: 100px;
+    background-color: #bb26498e;
+    border-top-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+}
+
+
+/* visibility */
+.visibility {
+  border: 1px solid;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 5px;
+}
+
+#visibility1 {
+  background-color: var(--BISCAY_BAY);
+}
+
+#visibility2 {
+  /* display : none은 보이지 않고 공간도 차지하지 않는다. */
+  /* display: none; */
+  /* visibility : hidden은 보이지 않지만 공간을 차지한다. */
+  visibility: hidden;
+  background-color : var(--FIR_GREEN)
+}
+
+#visibility3 {
+  background-color : var(--SILVER_PINE)
+}
+
+#z-outer {
+  position: relative;
+  height: 250px;
+}
+
+.z-index {
+  width: 150px;
+  height : 100px;
+  border: 1px solid;
+  position: absolute;
+}
+
+#z-index1 {
+  top: 100px;
+  left: 100px;
+  background-color : var(--CAYENNE);
+  border-color: var(--CAYENNE);
+  z-index: 5;
+  box-sizing: border-box;
+}
+
+#z-index2 {
+  top: 50px;
+  left : 50px;
+  background-color: var(--CHILI_PEPPER);
+  border-color: var(--CHILI_PEPPER);
+  z-index: 4;
+  box-sizing: border-box;
+}
+
+#z-index3 {
+  background-color: var(--GLOXINIA);
+  border-color: var(--GLOXINIA);
+  z-index: 9999;
+  box-sizing: border-box;
+}
+
+/*다단 스타일*/
+#column1 {
+  border: 1px solid;
+  height: 150px;
+  overflow: scroll;
+  column-width: 300px;
+  column-gap : 50px;
+  /* column-rule-color: var(--BLUE_IRIS);
+  column-rule-style: dashed; 
+  column-rule-width:5px;
+  */
+  column-rule : 5px dashed var(--);
+}
+
+.column-wrap {
+  border: 1px solid;
+  height: 150px;
+  overflow: scroll;
+}
+
+#column2 {
+  column-count: 6;
+}
+
+#column2>h4 {
+  column-span: all;
+}
+
+/* 표 스타일 */
+table {
+  width: 300px;
+  height: 500px;
+  border: 1px solid;
+  caption-side: bottom;
+  /* border-collapse: collapse; */
+  /* border-spacing: 20px; */
+  border-spacing: 20px 50px;
+  empty-cells: hide;
+  table-layout: fixed;
+  /* word-break: break-all; */
+}
+
+td {
+  width: 80px;
+  height: 100px;
+  border: 1px solid;
+  text-align: center;
+  vertical-align: top;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: ;
+}
+
