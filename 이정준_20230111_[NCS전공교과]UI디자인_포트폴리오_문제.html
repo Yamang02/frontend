@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>0111_포트폴리오_평가</title>
+    <style>
+      .tablehead {
+        height: 40px;
+        width: 60%;
+        background-color: coral;
+        color: white;
+      }
+
+      .tablefoot {
+        background-color: coral;
+        color: white;
+      }
+      .tablecontent {
+        background-color: beige;
+      }
+
+      .tablecontent * {
+        height: 32px;
+      }
+
+      .number{
+        width: 6%;
+      }
+
+      .title {
+        width: 60%;
+      }
+
+      .author {
+        width: 12%;
+      }
+
+      .button {
+        width: fit-content;
+      }
+
+      
+      .date {
+        width: 14%;
+      }
+
+      .count{
+        width: 6%;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>포트폴리오 문제</h1>
+    <form method="post">
+      <fieldset>
+        <legend>공지사항 작성하기</legend>
+        <table>
+          <tr>
+            <th>제목</th>
+            <td width="50px">
+              <input
+                type="text"
+                name="title"
+                required
+                placeholder="제목을 입력하시오."
+                size="30"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th>내용</th>
+            <td>
+              <textarea
+                name="content"
+                required
+                rows="10"
+                cols="32"
+                style="resize: none"
+                placeholder="내용을 입력하시오."
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <th>첨부파일</th>
+            <td><input type="file" name="uploadFile" /></td>
+          </tr>
+          <tr height = "20"></tr>
+          <tr>
+            <th colspan="2" ><input type="submit" value="작성하기" /></th>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+    <br>
+    <hr/>
+    <br>
+    <table border="1" width=100%>
+      <tr class="tablehead">
+        <th>번호</th>
+        <th colspan="2">제목</th>
+        <th>작성자</th>
+        <th>작성일</th>
+        <th>조회수</th>
+      </tr>
+      <tr class="tablecontent">
+        <td class="number">9</td>
+        <td class="title">공지사항 제목 9</td>
+        <td class="button"><input type="button" value="바로가기" /></td>
+        <td class="author">user01</td>
+        <td class="date">2021-03-29</td>
+        <td class="count">34</td>
+      </tr>
+      <tr class="tablecontent">
+        <td class="number">6</td>
+        <td class="title">공지사항 제목 6</td>
+        <td class="button"><input type="button" value="바로가기" /></td>
+        <td class="author">answ445</td>
+        <td class="date">2021-03-12</td>
+        <td class="count">67</td>
+      </tr>
+      <tr class="tablecontent">
+        <td class="number">3</td>
+        <td class="title">공지사항 제목 3</td>
+        <td class="button"><input type="button" value="바로가기" /></td>
+        <td class="author">testg12</td>
+        <td class="date">2021-03-01</td>
+        <td class="count">98</td>
+      </tr>
+      <tr class="tablecontent">
+        <td class="number">2</td>
+        <td class="title">공지사항 제목 2</td>
+        <td class="button"><input type="button" value="바로가기"/></td>
+        <td class="author">palwe3</td>
+        <td class="date">2021-01-02</td>
+        <td class="count">85</td>
+      </tr>
+      <tr class="tablecontent">
+        <td class="number">1</td>
+        <td class="title">공지사항 제목 1</td>
+        <td class="button"><input type="button" value="바로가기" /></td>
+        <td class="author">xml23</td>
+        <td class="date">2020-12-24</td>
+        <td class="count">124</td>
+      </tr>
+      <tr class="tablefoot">
+        <th colspan="4">전체공지사항 개수</th>
+        <th colspan="2">5개</th>
+      </tr>
+    </table>
+  </body>
+</html>
