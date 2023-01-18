@@ -1,3 +1,28 @@
+//5. 생성자 함수
+function Student(name, java, oracle) {
+  // 속성 정의
+  this.name = name;
+  this.java = java;
+  this.oracle = oracle;
+
+  // 메소드 정의
+  // this.getSum = function () {
+  //   return this.java + this.oracle;
+  // };
+
+  // this.getAvg = function () {
+  //   return this.getSum() / 2;
+  // };
+}
+
+Student.prototype.getSum = function () {
+  return this.java + this.oracle;
+};
+
+Student.prototype.getAvg = function () {
+  return this.getSum() / 2;
+};
+
 window.onload = () => {
   let btn1 = document.getElementById("btn1");
   // btn1.onclick = function () {
@@ -144,6 +169,9 @@ window.onload = () => {
     }
 
     console.log(students);
+    for (i = 0; i < students.length; i++) {
+      console.log(students[i]);
+    }
 
     // 모든 학생의 정보가 담긴 배열을 출력(이름, 총점, 평균)
     for (const obj of students) {
@@ -153,5 +181,130 @@ window.onload = () => {
     }
 
     div2.innerHTML += "안녕하세요.";
+  });
+
+  let btn5 = document.getElementById("btn5");
+
+  btn5.addEventListener("click", () => {
+    let div3 = document.getElementById("div3");
+    let student = new Student("문인수", 100, 80);
+    let students = [];
+
+    students.push(student);
+    students.push(new Student("홍길동", 80, 80));
+    students.push(new Student("이몽룡", 100, 100));
+    students.push(new Student("임꺽정", 60, 60));
+    students.push(new Student(60, 60));
+
+    console.log(student);
+    // 객체가 어떤 생성자 함수로 생성되었는지 instanceof 연산자로 확인할 수 있다.
+    console.log(student instanceof Student);
+    console.log(students);
+
+    // 모든 학생의 정보를 출력(이름, 총점, 평균)
+    // for (const idx in students) {
+    //   console.log(students[idx]);
+    //   div3.innerHTML += `이름 : ${students[idx].name}, 총점 : ${students[
+    //     idx
+    //   ].getSum()}, 평균 :  ${students[idx].getAvg()}<br>`;
+    // }
+
+    //   for (const idx in students) {
+    //   let studentKeys = Object.keys(students[idx])
+    //     div3.innerHTML += `<br>${studentKeys}<br>`;
+    //     for(const kidx of studentKeys) {
+    //     div3.innerHTML +=  `${students[idx]}.${kidx}<br>`
+    //    }
+    // }
+  });
+
+  //6. 캡슐화
+  function IdolGroup(n, m) {
+    let name = n;
+    let members = m;
+
+    this.getGroupName = function () {
+      return name;
+    };
+
+    this.getMembers = function () {
+      return members;
+    };
+
+    this.getMemberCount = function () {
+      return members.length;
+    };
+
+    this.setGroupName = function (n) {
+      name = n;
+    };
+
+    this.setMembers = function (m) {
+      members = m;
+    };
+  }
+
+  let btn6 = document.getElementById("btn6");
+
+  btn6.addEventListener("click", function () {
+    let div4 = document.getElementById("div4");
+    let idol = new IdolGroup("NCT", ["도영", "마크", "태용"]);
+
+    console.log(idol);
+
+    idol.setGroupName("엑소");
+    idol.setMembers(["백현", "카이", "시우민", "이상"]);
+
+    console.log(idol);
+
+    div4.innerHTML = `그룹명 : ${idol.getGroupName()}, 멤버: [${idol.getMembers()}], 멤버 수: ${idol.getMemberCount()}`;
+  });
+
+  // 7. Date 객체
+  let btn7 = document.getElementById("btn7");
+
+  btn7.addEventListener("click", () => {
+    let div5 = document.getElementById("div5");
+    let now = new Date();
+    let date1 = new Date(1000);
+    let date2 = new Date("2023-01-17T11:47:30");
+    let date3 = new Date(2023, 4, 25, 11, 48, 30);
+
+    div5.innerHTML = `Date 객체<br>`;
+    div5.innerHTML += `now : ${now}<br>`;
+    div5.innerHTML += `date1 : ${date1}<br>`;
+    div5.innerHTML += `date1 : ${date2}<br>`;
+    div5.innerHTML += `date1 : ${date3}<br>`;
+
+    div5.innerHTML += `now.getFullYear() : ${now.getFullYear()}<br>`;
+    div5.innerHTML += `now.getMonth() : ${now.getMonth() + 1}<br>`;
+    div5.innerHTML += `now.getDate() : ${now.getDate()}<br>`;
+    div5.innerHTML += `now.getDay() : ${now.getDay()}<br>`;
+    div5.innerHTML += `now.getHours() : ${now.getHours()}<br>`;
+    div5.innerHTML += `now.getMinutes() : ${now.getMinutes()}<br>`;
+    div5.innerHTML += `now.getSeconds() : ${now.getSeconds()}<br>`;
+    div5.innerHTML += `now.getMilliseconds() : ${now.getMilliseconds()}<br>`;
+    
+    // 1970년 1월 1일 00시를 기준으로 현재 시간에 대한 밀리 세컨드 값을 반환한다.
+    div5.innerHTML += `now.getTime() : ${now.getTime()}<br>`;
+    // 표준시와 date 객체에 저장된 시간과의 차이를 분 단위로 반환한다.
+    div5.innerHTML += `now.getTimezoneOffset() : ${now.getTimezoneOffset() / 60}<br>`;
+    //연월일에 대한 정보
+    div5.innerHTML += `now.toDateString() : ${now.toDateString()}<br>`;
+    //시분초에 대한 정보
+    div5.innerHTML += `now.toTimeString() : ${now.toTimeString()}<br>`;
+    //세계 협정시
+    div5.innerHTML += `now.toUTCString() : ${now.toUTCString()}<br>`;
+    //표준표기법(세계협정시)
+    div5.innerHTML += `now.toISOString() : ${now.toISOString()}<br>`;
+    //지역정보
+    div5.innerHTML += `now.toLocaleString() : ${now.toLocaleString()}<br>`;
+    div5.innerHTML += `now.toLocaleDateString() : ${now.toLocaleDateString()}<br>`;
+    div5.innerHTML += `now.toLocaleTimeString() : ${now.toLocaleTimeString()}<br>`;
+    
+    div5.innerHTML += `now.toLocaleString('en-US') : ${now.toLocaleString('en-US')}<br>`;
+    div5.innerHTML += `now.toLocaleString('zh-hk') : ${now.toLocaleString('zh-hk')}<br>`;
+    
+    // div5.innerHTML = '안녕하세요.'
   });
 };

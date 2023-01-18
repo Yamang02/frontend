@@ -1,138 +1,220 @@
-
-
 #wrap {
-    width: 1000px;
-    height: 750px;
-    /* border: 1px solid red; */
+  width: 1000px;
+  height: 750px;
+  /* border: 1px solid red; */
 }
 
 header {
-    width: 100%;
-    height: 20%;
+  width: 100%;
+  height: 20%;
 
-    box-sizing: border-box;
-    /* border: 1px solid red; */
+  box-sizing: border-box;
+  /* border: 1px solid red; */
 }
 
 #logo {
-    height: 70%;
-    box-sizing: border-box;
-    /* border: 1px solid red; */
+  height: 70%;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
 }
 
 #hl1 {
-    width: 25%;
-    height: 100%;
-    box-sizing: border-box;
-    /* border: 1px solid red; */
-    float: left;
+  width: 25%;
+  height: 100%;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+  float: left;
 }
 
 #hl2 {
-    width: 75%;
-    height: 100%;
-    box-sizing: border-box;
-    /* border: 1px solid red; */
-    float: left;
+  width: 75%;
+  height: 100%;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+  float: left;
 }
 
 #menu {
-    height: 30%;
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    /* background-color: rgb(71, 180, 71); */
-    /* border: 1px solid red; */
+  height: 30%;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  /* background-color: rgb(71, 180, 71); */
+  /* border: 1px solid red; */
 }
 
 #mainmenu > ul {
-    box-sizing: border-box;
-    list-style-type: none;
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
+  box-sizing: border-box;
+  list-style-type: none;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 
-#mainmenu > ul > li{
-    float: left;
-    width: 25%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    text-align: center;
-    line-height: 40px;
-    box-sizing: border-box;
-    background-color: rgb(71, 180, 71);
+#mainmenu > ul > li {
+  float: left;
+  width: 25%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  line-height: 40px;
+  box-sizing: border-box;
+  background-color: rgb(71, 180, 71);
 }
 
-#mainmenu  a {
-    color: white;
-    font-size: large;
-    text-decoration: none;
+#mainmenu a {
+  color: white;
+  font-size: large;
+  text-decoration: none;
 }
-
 
 section {
-    width: 100%;
-    height: 60%;
-    background-color: rgba(255, 255, 0, 0.116);
-    box-sizing: border-box;
+  width: 100%;
+  height: 60%;
+  /* background-color: rgba(255, 255, 0, 0.116); */
+  box-sizing: border-box;
 }
 
 section > div {
-    height: 100%;
-    float: left;
-    box-sizing: border-box;
-    /* border: 1px solid red; */
+  height: 100%;
+  float: left;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
 }
 
 #sidemenu {
-    width: 20%;
-    box-sizing: border-box;
+  width: 20%;
+  box-sizing: border-box;
 }
 
 aside {
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+#aside_wrap {
+  width: 100%;
+  height: 100%;
 }
 
 #articles {
-    width: 80%;
-    box-sizing: border-box;
-    /* border: 1px solid red; */
+  width: 80%;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
 }
 
 #sar1 {
-    width: 70%;
-    height: 100%;
-    box-sizing: border-box;
-    /* border: 1px solid red; */
-    float: left;
+  width: 70%;
+  height: 100%;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+  float: left;
+}
+
+#sar1 p {
+  margin: 0;
+  text-align: center;
+  font-size: 15px;
 }
 
 #sar1 > div {
-    float: left;
-    box-sizing: border-box;
-    height: 50%;
-    width: 50%;
-    border: 1px solid red;
+  float: left;
+  box-sizing: border-box;
+  height: 50%;
+  width: 50%;
+  /* border: 1px solid red; */
+  padding: 10px;
 }
 
 #sar2 {
-    width: 30%;
-    height: 100%;
-    box-sizing: border-box;
-    /* border: 1px solid red; */
-    float: left;
+  width: 30%;
+  height: 100%;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+  float: left;
 }
 
+#sar2 * {
+  box-sizing: border-box;
+  float: left;
+}
 
+#login_wrap {
+  width: 100%;
+  height: 25%;
+  /* border: 1px solid red; */
+}
+
+#login_form {
+  height: 70%;
+  width: 70%;
+  padding-top: 8px;
+  padding-left: 10px;
+  float: left;
+}
+
+#login_input {
+  height: 100%;
+  width: 100%;
+}
+#login_input > div {
+  height: 100%;
+  width: 100%;
+}
+#login_input > div > input {
+  height: 30px;
+  width: 100%;
+}
+
+#login_button {
+  width: 30%;
+  height: 70px;
+  float: left;
+  padding: 10px;
+  padding-top: 12px;
+}
+
+#login_button > button {
+  width: 100%;
+  height: 100%;
+  font-size: smaller;
+}
+
+#login_link {
+  width: 100%;
+  height: 30%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+#login_link > a {
+  width: 50%;
+  height: 100%;
+  text-align: center;
+}
+
+#banner_wrap {
+  width: 100%;
+  height: 50%;
+}
+
+#chat_wrap {
+  width: 100%;
+  height: 25%;
+}
 
 footer {
-    width: 100%;
-    height: 20%;
-    background-color: rgba(0, 0, 255, 0.068);
-    box-sizing: border-box;
+  width: 100%;
+  height: 20%;
+  /* background-color: rgba(0, 0, 255, 0.068); */
+  box-sizing: border-box;
+}
+
+#footer_wrap {
+  width: 100%;
+  height: 100%;
 }
