@@ -22,9 +22,13 @@
               <form>
                 <div id="search_bar"><input type="search" /></div>
                 <div id="search_button">
-                  <button
-                    type="search"
-                  ></button>
+                  <button type="submit" style="background-color: white">
+                    <img
+                      src="D:\develop\Github\frontend\실습\실습_v2\image\search.png"
+                      width="28px"
+                      height="28px"
+                    />
+                  </button>
                 </div>
               </form>
             </div>
@@ -32,7 +36,13 @@
           <div id="header3"></div>
         </div>
         <div id="navi_area">
-          <nav id="mainmenu"></nav>
+          <nav id="mainmenu">
+            <div><a href="#">교육과정</a></div>
+            <div><a href="#">교육원소개</a></div>
+            <div><a href="#">취업지원센터</a></div>
+            <div><a href="#">산학연계</a></div>
+            <div><a href="#">상담센터</a></div>
+          </nav>
         </div>
       </header>
       <article>
@@ -44,7 +54,16 @@
               style="width: 733.182px; height: 128.182px"
             />
           </div>
-          <div id="notice_area"></div>
+          <div id="notice_area">
+            <div id="notice">
+              안녕하세요. 여기는 공지사항 제목이 들어오는 자리입니다.
+            </div>
+            <div id="notice_links">
+              <a href="#">경제</a>
+              <a href="#">연예</a>
+              <a href="#">사회</a>
+            </div>
+          </div>
           <div id="cars">
             <img
               src="D:\develop\Github\frontend\실습\실습_v2\image\car.PNG"
@@ -54,7 +73,23 @@
           </div>
         </div>
         <div id="right_article">
-          <div id="login_area"></div>
+          <div id="login_area">
+            <div id="login_forms">
+              <form>
+                <div id="input_forms">
+                  <input type="text" placeholder="아이디를 입력하세요." />
+                  <input type="password" placeholder="패스워드를 입력하세요." />
+                </div>
+                <div id="login_button">
+                  <button type="submit">로그인</button>
+                </div>
+              </form>
+            </div>
+            <div id="login_links">
+              <a href="#">아이디</a> | <a href="#">비밀번호찾기</a> |
+              <a href="#">회원가입</a>
+            </div>
+          </div>
           <div id="shopping_area">
             <img
               src="D:\develop\Github\frontend\실습\실습_v2\image\shopping.PNG"
@@ -67,10 +102,24 @@
       <footer>
         <div id="footer_wrap">
           <div id="information">
-            <div id="menu_links"></div>
-            <div id="location_area"></div>
+            <div id="menu_links">
+              <a href="#">이용약관</a> | <a href="#">개인정보취급방침</a> |
+              <a href="#">인재채용</a> |
+              <a href="#">고객센터</a>
+            </div>
+            <div id="location_area">
+              <p>
+                강남지원 1관 : 서울특별시 강남구 테헤란로 14길 6 남도빌딩 2F,
+                3F, 4F, 5F, 6F <br />
+                강남지원 2관 : 서울특별시 강남구 테헤란로 10길 9 그랑프리 빌딩
+                4F, 5F, 7F <br />
+                강남지원 3관 : 서울특별시 강남구 테헤란로 130 호산빌딩 5F, 6F
+              </p>
+            </div>
           </div>
-          <div id="space_area"></div>
+          <div id="copyright_area">
+            <p>Copyright © 1998-2020 KH Information Educational Institute All Right Reserved</p>
+          </div>
         </div>
       </footer>
     </div>

@@ -47,13 +47,14 @@ header > div {
   position: relative;
 }
 
-#logo_area img, #search_bar_area > div {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+#logo_area img,
+#search_bar_area > div {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 #search_bar_area {
@@ -63,25 +64,26 @@ header > div {
 }
 
 #search_bar_area > div {
-    width: 420px;
-    height: 35px;
+  width: 420px;
+  height: 35px;
 }
 
 #search_bar {
-    float: left;
-    width: 335px;
-    height: 35px;
+  float: left;
+  width: 335px;
+  height: 35px;
 }
 
 #search_button {
-    float: left;
-    width: 85px;
-    height: 35px;
+  float: left;
+  width: 85px;
+  height: 35px;
 }
 
-#search_bar *, #search_button * {
-    width: 100%;
-    height: 100%;
+#search_bar *,
+#search_button > button {
+  width: 100%;
+  height: 100%;
 }
 
 #header3 {
@@ -94,6 +96,27 @@ header > div {
   width: 100%;
   height: 40px;
   box-sizing: border-box;
+}
+
+#mainmenu {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#mainmenu > div {
+  box-sizing: border-box;
+  float: left;
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+#mainmenu > div > a {
+  text-decoration: none;
+  font-weight: bold;
+  color: grey;
 }
 
 article {
@@ -124,6 +147,33 @@ article > div > div {
 #notice_area {
   width: 735px;
   height: 43px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+#notice_area > div {
+  box-sizing: border-box;
+  float: left;
+  height: 100%;
+  font-size: small;
+}
+
+#notice {
+  height: 100%;
+  width: 80%;
+  text-align: left;
+  line-height: 43px;
+}
+
+#notice_links {
+  width: 20%;
+  text-align: right;
+  line-height: 43px;
+  font-size: x-small;
+}
+
+#notice_links > a {
+  text-decoration: none;
 }
 
 #cars {
@@ -136,6 +186,52 @@ article > div > div {
   height: 130px;
 }
 
+#login_forms,
+#login_forms > form {
+  width: 100%;
+  height: 105px;
+  /* background-color: red; */
+}
+
+#login_forms > form > div {
+  float: left;
+}
+
+#input_forms {
+  width: 175px;
+  height: 100%;
+}
+
+#input_forms > input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 50%;
+}
+
+#login_button {
+  width: 73px;
+  height: 105px;
+}
+
+#login_button > button {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+#login_links {
+  box-sizing: border-box;
+  width: 100%;
+  height: 25px;
+  text-align: center;
+}
+
+#login_links > a {
+  text-decoration: none;
+  font-size: small;
+  color: black;
+}
+
 #shopping_area {
   width: 250px;
   height: 295px;
@@ -146,4 +242,27 @@ footer {
   box-sizing: border-box;
   border: 1px solid grey;
   height: 155px;
+}
+
+#menu_links {
+  text-align: center;
+}
+
+#menu_links > a {
+  text-decoration: none;
+  font-size: small;
+  margin:15px;
+  line-height:40px;
+  font-weight: bold;
+  color: black;
+}
+
+#location_area {
+  margin:15px;
+  font-size: small;
+}
+
+#copyright_area {
+  text-align: center;
+  font-size: small;
 }
